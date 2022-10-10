@@ -1,0 +1,79 @@
+:root {
+
+    --clr-card-txt: hsl(193, 38%, 86%);
+    --clr-main-btn: hsl(150, 100%, 66%);
+
+    --clr-main-bg: hsl(218, 23%, 16%);
+    --clr-card-bg:hsl(217, 19%, 24%);
+    --clr-main-txt: hsl(217, 19%, 38%);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-main-bg);
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.card-container {
+    position: relative;
+    max-width: 31.25rem;
+    background-color: var(--clr-card-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: .8rem;
+}
+
+h3{
+    color: var(--clr-main-btn);
+    font-size: .6rem;
+    letter-spacing: .3rem;
+    
+}
+
+h1{
+    color: var(--clr-card-txt);
+    font-size: 1.75rem;
+}
+
+.btn-container{
+    position: absolute;
+    background-color: var(--clr-main-btn);
+    border-radius: 50%;
+    display: inline-block;
+    bottom: -15%;
+}
+
+picture{
+    padding-bottom: 1rem;
+}
+
+.btn-generate{
+    padding: 1rem;
+}
+
+.btn-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1.563rem var(--clr-main-btn);
+}
+
+@media (min-width:31.25rem) {
+    .btn-container{
+        bottom: -20%;
+    }
+
+    picture{
+        padding-bottom: 2rem;
+    }
+}
