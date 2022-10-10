@@ -52,11 +52,11 @@ h1{
     background-color: var(--clr-main-btn);
     border-radius: 50%;
     display: inline-block;
-    bottom: -15%;
+    bottom: -1.875rem;
 }
 
 picture{
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .btn-generate{
@@ -68,12 +68,3 @@ picture{
     box-shadow: 0 0 1.563rem var(--clr-main-btn);
 }
 
-@media (min-width:31.25rem) {
-    .btn-container{
-        bottom: -20%;
-    }
-
-    picture{
-        padding-bottom: 2rem;
-    }
-}
